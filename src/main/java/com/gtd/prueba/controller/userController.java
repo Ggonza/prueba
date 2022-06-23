@@ -13,9 +13,9 @@ import java.util.List;
 public class userController {
     @Autowired private userService service;
 
-    @GetMapping("/gestionUsuarios")
+    @GetMapping("/mainView")
     public String showMain(){
-        return "gestionUsuarios/baseAdm";
+        return "mainView/gestionMain";
     }
 
     @GetMapping("/gestionUsuarios/Listados")
