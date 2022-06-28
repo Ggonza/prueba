@@ -8,6 +8,6 @@ public class MainController {
 
     @GetMapping("")
     public String mostrarLanding(){
-        return "op1/index";
+        return "index";
     }
 }

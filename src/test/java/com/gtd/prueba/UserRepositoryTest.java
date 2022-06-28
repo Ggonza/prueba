@@ -21,11 +21,11 @@ public class UserRepositoryTest {
     public void testAddNew(){
         User user = new User();
 
-        user.setDni(2234);
-        user.setEmail("00test@mail.com");
-        user.setPassword("00asd1");
-        user.setName("00nombreTEST");
-        user.setLastname("00apellidoTEST");
+        user.setDni(11234);
+        user.setEmail("99test@mail.com");
+        user.setPassword("99asd1");
+        user.setName("99nombreTEST");
+        user.setLastname("99apellidoTEST");
 
         User savedUser = repoUser.save(user);
         //Verificacion para ver que no este nula ni el ID tenga un valor menor o igual a cero

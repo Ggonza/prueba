@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="BaseViews/baseAdm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.ultraq.net.nz/thymeleaf/layout ">
+
+<body>
+<div layout:fragment="contenido">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 p-0">
+                    <div class="card cardControlSize">
+                        <div class="card-body p-0">
+                            <div class="card-header bg-light">
+                                <h4 class="text-center">
+                                    <strong>
+                                        Crear Factura
+                                    </strong>
+                                </h4>
+                            </div>
+                            <form method="post" th:object="${bill}">
+                                <div class="card-body row">
+                                    <div class="form-group col-8">
+                                        <label for="exampleInputEmail1">Nombre Empresa</label>
+                                        <input type="email" th:field="" class="form-control" id="exampleInputEmail1"
+                                               placeholder=". . .">
+                                    </div>
+                                    <div class="form-group col-3 offset-1">
+                                        <label for="exampleInputPassword1">codigo factura</label>
+                                        <input type="text" class="form-control" id="" placeholder=". . . ">
+                                    </div>
+                                    <div class="form-group col-8">
+                                        <label for="exampleInputPassword1">codigo factura</label>
+                                        <input type="text" class="form-control" id="" placeholder=". . . ">
+                                    </div>
+                                    <div class="form-group col-4 disabled">
+                                        <label for="exampleInputPassword1">Estado</label>
+                                        <input type="text" class="form-control" id="" placeholder=". . . ">
+                                    </div>
+                                    <div class="form-group col-10">
+                                        <label for="exampleInputPassword1">Nombre de producto</label>
+                                        <select class="form-select form-control" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="exampleInputPassword1">Cantidad</label>
+                                        <input type="number" class="form-control" id="" placeholder=". . . ">
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="exampleInputPassword1">Precio</label>
+                                        <input type="number" class="form-control" id="" placeholder=". . . ">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="floatingTextarea2">Detalles</label>
+                                        <div class="form-floating">
+                                            <textarea class="form-control"
+                                                      placeholder="Deje aqui alguna descricion o detalle"
+                                                      id="floatingTextarea2" style="height: 100px"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="col-3 btn btn-primary offset-4 mb-3">
+                                    <strong>Enviar</strong>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 p-0 offset-1">
+                    <div class="card cardControlSize">
+                        <div class="card-body p-0">
+                            <div class="col-12 mt-2">
+                                <div class="info-box bg-success">
+                                    <span class="info-box-icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">
+                                            <strong>TOTAL</strong>
+                                        </span>
+                                        <span class="info-box-number">0.00</span>
+                                        <span class="progress-description">
+                                        incluye el % del IVA
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

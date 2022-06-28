@@ -13,6 +13,11 @@ import java.util.List;
 public class userController {
     @Autowired private userService service;
 
+    @GetMapping("/Login")
+    public String showLanding(){
+        return "index";
+    }
+
     @GetMapping("/mainView")
     public String showMain(){
         return "mainView/gestionMain";
@@ -22,6 +27,12 @@ public class userController {
     public String showUserList(Model model){
         List<User> listUsers = service.listAll();
         model.addAttribute("listUsers", listUsers);
-        return "gestionUsuarios/userList/U_List";
+        return "clienteView/userList/U_List";
     }
+
+
+//    @GetMapping("/facturacion")
+//    public String billingView(){
+//        return "clienteView/Billing/facturacion";
+//    }
 }
