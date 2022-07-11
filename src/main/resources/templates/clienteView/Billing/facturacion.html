@@ -37,42 +37,60 @@
                                         <label for="exampleInputPassword1">Estado</label>
                                         <input type="text" class="form-control" id="" placeholder=". . . ">
                                     </div>
-                                    <div class="form-group col-12">
-                                        <div class="card">
-                                            <div class="card-header collapsed-card ">
-                                                <h3 class="card-title">Productos</h3>
-                                                <div class="card-tools">
-                                                    <!-- Collapse Button -->
-                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="card-body row">
-                                                <div class="form-group col-10">
-                                                    <label for="exampleInputPassword1">Nombre de producto</label>
-                                                    <select class="form-select form-control">
-                                                        <option selected>. . .</option>
-                                                        <option value="item 1">One</option>
-                                                        <option value="item 2">Two</option>
-                                                        <option value="item 3">Three</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <a class="h6">
-                                                        <label for="exampleInputPassword1">añadir</label>
-                                                        <i class="fa-solid fa-circle-plus"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="input-group col-5">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1">Precio</span>
+                                    <div class="form-group col-12 p-0 disabled">
+                                        <hr>
+                                    </div>
+
+                                    <div class="form-group col-12 disabled">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        Productos
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="card-body row">
+                                                        <div class="card col-12">
+                                                            <div class="card-header">
+                                                                #1
+                                                            </div>
+                                                            <div class="card-body row">
+                                                                <div class="form-group col-12">
+                                                                    <label for="exampleInputPassword1">Nombre de producto</label>
+                                                                    <select class="form-select form-control">
+                                                                        <option selected>. . .</option>
+                                                                        <option value="item 1">One</option>
+                                                                        <option value="item 2">Two</option>
+                                                                        <option value="item 3">Three</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="input-group col-6">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text" id="basic-addon1">
+                                                                            <i class="fa-solid fa-dollar-sign"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" placeholder="Precio" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div>
+                                                                <div class="input-group col-6">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text" id="basic-addon1">
+                                                                            <i class="fa-solid fa-sack-dollar"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" placeholder="Cantidad" aria-describedby="basic-addon1">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-2 offset-lg-10 offset-sm-3">
+                                                            <a class="h6">
+                                                                <label for="exampleInputPassword1">añadir</label>
+                                                                <i class="fa-solid fa-circle-plus"></i>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                    <input type="text" class="form-control" placeholder="Valor" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-                                                <div class="input-group col-5">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1">Cantidad</span>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="Cantidad" aria-describedby="basic-addon1">
                                                 </div>
                                             </div>
                                         </div>

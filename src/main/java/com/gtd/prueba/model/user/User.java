@@ -12,11 +12,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false, unique = true,length = 20, name = "documento")
+    @Column(nullable = false, unique = true,length = 20, name = "dni")
     private Integer dni;
-    @Column(name = "nombre",length = 60)
+    @Column(name = "name",length = 60)
     private String name;
-    @Column(name = "apellido",length = 60)
+    @Column(name = "lastname",length = 60)
     private String lastname;
 
     @Column(nullable = false)
