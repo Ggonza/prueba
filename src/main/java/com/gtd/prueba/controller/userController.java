@@ -25,16 +25,10 @@ public class userController {
         return "mainView/gestionMain";
     }
 
-    @GetMapping("/gestionUsuarios/Listados")
-    public String showUserList(Model model){
+    @GetMapping("/gestion")
+    public String showTest(Model model){
         List<User> listUsers = service.listAll();
         model.addAttribute("listUsers", listUsers);
-        return "clienteView/userList/U_List";
+        return "/clienteView/userList/U_list";
     }
-
-
-//    @GetMapping("/facturacion")
-//    public String billingView(){
-//        return "clienteView/Billing/facturacion";
-//    }
 }
