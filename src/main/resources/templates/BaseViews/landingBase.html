@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.ultraq.net.nz/thymeleaf/layout ">
+<head th:insert="/BaseViews/fragments/frag_head:: headpage">
+</head>
+
+<body class="contenedorBody">
+<nav class="cabeceraLanding navbar navbar-expand-lg navbar-light">
+    <a class="textShadowColor navbar-brand offset-2 text-white border border-light p-1" href="#">
+        <h5><strong>FAKTURA</strong></h5>
+    </a>
+
+    <div class=" collapse navbar-collapse offset-4" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active textHover">
+                <a class="nav-link text-white textShadowColor" th:href="@{/inicio}">
+                    <strong>Inicio</strong>
+                    <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white textShadowColor" th:href="@{/planes}">
+                    <strong>Planes</strong>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white textShadowColor" href="#">
+                    <strong>Facturacion Electronica</strong>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white textShadowColor" href="#">
+                    <strong>Nosotros</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div layout:fragment="landContenido" class="container-fluid row">
+
+</div>
+</body>
+</html>
